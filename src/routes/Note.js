@@ -13,7 +13,7 @@ router.post('/add', async(req, res) => {
     await Note.deleteOne({ id: req.body.id })
     var newNote = new Note({
         id:req.body.id,
-        userId: req.body.userid,
+        userid: req.body.userid,
         title: req.body.title,
         content: req.body.content
     })
